@@ -1,0 +1,168 @@
+:root {
+  --bg-light: #ffffff;
+  --bg-medium: #f3f3f3;
+  --bg-dark: #dddddd;
+
+  --bg-red: #ff0000;
+  --bg-blue: #0000ff;
+  --bg-green: #00ff00;
+
+
+  --bg-white-light: #ffffff;
+  --bg-white-medium: #f3f3f3;
+  --bg-white-dark: #dddddd;
+
+  --bg-black-light: #353535;
+  --bg-black-medium: #272727;
+  --bg-black-dark: #131313;
+
+  --text-color: #000000;
+  --text-white: #ffffff;
+  --text-black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: var(--bg-dark);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+nav>div {
+  display: grid;
+  grid-template-columns: 600px 100px;
+}
+
+#theme-button {
+  cursor: pointer;
+  background-color: var(--bg-dark);
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+#theme-button ion-icon {
+  margin-left: 10px;
+}
+
+main {
+  width: 65%;
+  margin: 100px auto 50px auto;
+}
+
+main img {
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  width: 100%;
+}
+
+main h1 {
+  display: block;
+  width: max-content;
+  font-size: 45px;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+  background-image: linear-gradient(to bottom,
+      transparent 0%,
+      transparent 65%,
+      #00c3ff 65%,
+      #00c3ff 90%,
+      transparent 90%);
+}
+
+main p {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.wrapper {
+  background-color: var(--bg-medium);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: var(--bg-dark);
+  padding: 30px 60px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+ul {
+  position: absolute;
+  list-style: none;
+  display: grid;
+
+}
+
+.coucou {
+  font-size: 150px;
+  visibility: hidden;
+  background-color: rgb(218, 12, 132);
+  transform: translate(-300px, 0);
+  transition: ease-in;
+}
+
+img:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  animation: rotate 2.5 linear forwards;
+  translate: -10px -300px;
+  transition: 2s;
+  transform: rotate(180deg);
+}
+
+p:hover {
+  font-size: 10px;
+  background-color: #2d2b2b;
+  /* width: max-content; */
+  border-radius: 50%;
+}
+
+#emoji {
+  position: absolute;
+  font-size: 2em;
+  pointer-events: none;
+  /* Pour ignorer l'élément lors des événements de la souris */
+}
+
+/* 
+@keyframes ani {
+  0% {
+    transform: rotate(0deg);
+
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+} */
